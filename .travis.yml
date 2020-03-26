@@ -1,0 +1,28 @@
+sudo: false
+language: go
+
+dist: bionic
+
+env:
+  global:
+    - CACHE_NAME=${TRAVIS_ARCH}
+    - GO111MODULE=on
+    - GOPROXY=https://proxy.golang.org
+    - HUGO_BUILD_TAGS=extended
+
+git:
+    depth: 1
+go:
+  - master
+
+install: go get -v github.com/gohugoio/hugo
+script: hugo
+deploy:
+    provider: pages
+    skip_cleanup: true
+    github_token: $token
+    on:
+        branch: master
+    local_dir: public
+    repo: gallonhu/gallonhu.github.io
+    target_branch: master

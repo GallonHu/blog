@@ -6,4 +6,4 @@ theme = "journal"
 [params]
   description = "Blog meta description."
   githubUsername = "gallonhu"
-  tagline = "Learning and coding"
+  tagline = "有时候拼命奔跑，只是为了留在原地。"

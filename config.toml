@@ -1,9 +1,9 @@
 baseURL = "https://gallonhu.github.io"
 languageCode = "en-us"
-title = "Keep Going"
+title = "Waking up"
 theme = "journal"
 
 [params]
   description = "Blog meta description."
   githubUsername = "gallonhu"
-  tagline = "有时候拼命奔跑，只是为了留在原地。"
+  tagline = "Anything in life worth doing is worth overdoing. Moderation is for cowards."

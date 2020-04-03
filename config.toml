@@ -7,3 +7,9 @@ theme = "journal"
   description = "Blog meta description."
   githubUsername = "gallonhu"
   tagline = "Anything in life worth doing is worth overdoing. Moderation is for cowards."
+
+[markup]
+  defaultMarkdownHandler = "goldmark"
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

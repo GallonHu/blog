@@ -3,4 +3,4 @@
     url = https://github.com/GallonHu/hugo-journal.git
 [submodule "themes/contrast"]
 	path = themes/contrast
-	url = git@github.com:GallonHu/contrast-hugo.git
+	url = https://github.com:GallonHu/contrast-hugo.git

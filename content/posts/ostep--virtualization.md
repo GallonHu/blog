@@ -2,6 +2,8 @@
 title: "Ostep  Virtualization"
 date: 2020-04-02T10:34:27+08:00
 draft: false
+categories: [OS]
+math: true
 ---
 
 ## CPU 虚拟化
@@ -22,7 +24,7 @@ draft: false
 
 操作系统运行程序必须做的第一件事是将代码和所有静态数据（例如初始化变量）加载到内存中，加载到进程的地址空间中。程序最初以某种可执行格式驻留在磁盘上 （disk，或者在某些现代系统中，在基于闪存的 SSD 上）。因此，将程序和静态数据加载到内存中的过程，需要操作系统从磁盘读取这些字节，并将它们放在内存中的某处（见下图）
 
-<img src="https://cdn.jsdelivr.net/gh/GallonHu/pic@master/blog/从程序到进程.png" style="zoom:75%;" />
+![从程序到进程](https://cdn.jsdelivr.net/gh/GallonHu/pic@master/blog/从程序到进程.png)
 
 将代码和静态数据加载到内存后，操作系统在运行此进程之前还需要执行其他一些操作，为程序的运行时栈（runtime stack）和堆分配一些内存。在 C 程序使用栈存放局部变量、函数参数和返回地址。操作系统分配这些内存，并提供给进程。 操作系统也可能会用参数初始化栈。具体来说，它会将参数填入 main()函数，即 argc 和 argv 数组。堆用于显式请求的动态分配数据。程序通过调用 malloc() 来请求这样的空间，并通过调用 free() 来明确地释放它。数据结构（如链表、散列表、树和其他有趣的数据结构）需要堆。起初堆会很小。随着程序运行，通过 malloc() 请求更多内存，操作系统可能会参与分配更多内存给进程，以满足这些调用。
 
@@ -134,7 +136,7 @@ $$
 
 FIFO有一些积极的特性：简单且易于实现
 
-![](https://cdn.jsdelivr.net/gh/GallonHu/pic@master/blog/FIFO简单例子.png)
+![FIFO](https://cdn.jsdelivr.net/gh/GallonHu/pic@master/blog/FIFO简单例子.png)
 
 #### 最短任务优先（SJF）
 

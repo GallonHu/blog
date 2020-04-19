@@ -2,6 +2,7 @@
 title: "Python GIL 的前世今生"
 date: 2020-03-30T10:10:58+08:00
 draft: false
+categories: [Python, GIL]
 ---
 
 简而言之，Python 的全局解释器（[GIL](https://wiki.python.org/moin/GlobalInterpreterLock)）是一种互斥锁，它仅允许一个线程持有 Python 解释器的控制权。这意味着在任何时间点只有一个线程处于执行状态。对于执行单线程程序的开发人员而言，GIL 的影响并不明显，但它可能是 CPU 密集和多线程代码的性能瓶颈。

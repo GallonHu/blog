@@ -3,10 +3,11 @@ languageCode = "en-us"
 title = "Gallon"
 theme = "contrast"
 description = "Never settle, never will."
+newContentEditor = "nvim"
+enableGitInfo = true
 
 [params]
-    description = "Never settle, never will."
-    longDescription = "Never settle, never will."
+    description = "写的一手好 Hello World"
 
 [menu]
   [[menu.remote]]

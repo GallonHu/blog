@@ -219,3 +219,17 @@ Python GIL通常被认为是一个神秘而困难的话题。但是请记住，�
 
 本文翻译自 [What is the Python Global Interpreter Lock (GIL)?](https://realpython.com/python-gil/)，有兴趣的可以去看看原文。
 
+## 链接
+
+1. [What is the Python Global Interpreter Lock (GIL)?](https://realpython.com/python-gil/)
+
+2. [Gilectomy](https://github.com/larryhastings/gilectomy)
+
+3. [Understanding the Python GIL](https://youtu.be/Obt-vMVdM8s)
+
+4. [机制](https://mail.python.org/pipermail/python-dev/2009-October/093321.html)
+
+5. [此处](http://www.dabeaz.com/blog/2010/01/python-gil-visualized.html)
+6. [“It isn’t Easy to remove the GIL”](https://www.artima.com/weblogs/viewpost.jsp?thread=214235)
+7. [Larry Hastings](https://www.youtube.com/watch?v=KVKufdTphKs&feature=youtu.be&t=12m11s) 
+

@@ -20,7 +20,7 @@ enableGitInfo = true
   name = "Subscribe"
   url = "/index.xml"
   identifier = "rss"
-  weight = 4.0 
+  weight = 4.0
 
 # [params]
 #   description = "Blog meta description."
